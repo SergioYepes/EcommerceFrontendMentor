@@ -1,0 +1,30 @@
+@use "variables" as v;
+@use "mixins" as m;
+.modal-nav{
+    // display:none;
+    background-color: v.$White;
+    width: 250px;
+    padding: 28px 24px;
+    height:100%;
+    &__items{
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-between;
+        list-style: none;
+        margin-top: 50px;
+    }
+    &__item{
+        text-decoration: none;
+        color:v.$Veryvarkblue;
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+    &__back{
+         @include m.modal-back;
+    }
+    &__cerrar:hover{
+        cursor: pointer;
+    }
+}

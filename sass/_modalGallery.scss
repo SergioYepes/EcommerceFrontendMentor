@@ -1,0 +1,52 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.modal-gallery{
+    width: 550px;
+    &__Background{
+        @include m.modal-back;
+        // display: none;
+        // //display:grid;
+        place-content: center;
+    }
+    &__container{
+        height: 446px;
+        background-image: url("../../ecommerce-product-page-main/images/image-product-1.jpg");
+        background-size:cover;
+        position: relative;
+        border-radius: 16px;
+        margin-bottom: 32px;
+    }
+    &__thumbnails{
+            display:flex;
+            justify-content: space-between;
+            width: 450px;
+            margin: auto;
+    }
+    &__thumbnails-1{
+        width:90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid v.$Orange; 
+        }
+    }
+    &__prev{
+        @include m.img-btn(190px,-15px,true)
+    }
+    &__next{
+        @include m.img-btn(190px,520px,true)
+    }
+    &__closeCont{
+        text-align: right;
+        height: 30px;
+    }
+    &__close{
+        width: 16px;
+        &:hover{
+            cursor:pointer;
+            content:url("./images/icon-close copy 2.svg");
+        }
+
+    }
+}

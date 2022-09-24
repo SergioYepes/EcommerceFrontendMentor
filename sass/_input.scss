@@ -1,0 +1,26 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.input{
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    background-color: v.$Lightgrayishblue;
+    &__minus {
+        @include m.btn-mas(25px,5px)
+    }
+    &__plus{
+        @include m.btn-mas(19px,3px)
+    }
+    &__number{
+        background-color: v.$Lightgrayishblue;
+        width: 100%;
+        border:none;
+        font-weight: 700;
+        font-size: 1.2em;
+        font-family: v.$font;
+        text-align: center;
+        outline: none;
+    }
+  
+}

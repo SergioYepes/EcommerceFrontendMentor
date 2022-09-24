@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="./main.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 18px; text-align: center; }
+    .attribution a { color: hsl(51, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="main-container">
+    <header class="header">
+      <div class="header__nav">
+        <img class="header__menu" src="./images/icon-menu.svg" alt="menu" >
+        <img class="header__logo" src="./images/logo.svg" alt="logo">
+        <nav class="navbar">
+          <ul class="navbar__items">
+            <li><a class="navbar__item" href="#">Collections</a></li>
+            <li><a class="navbar__item" href="#">Men</a></li>
+            <li><a class="navbar__item" href="#">Women</a></li>
+            <li><a class="navbar__item" href="#">About</a></li>
+            <li><a class="navbar__item" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- modal -->
+
+      <div class="modal-nav__back">
+        <nav class="modal-nav">
+          <img class="modal-nav__cerrar" src="./images/icon-close.svg" alt="iconClose">
+          <ul class="modal-nav__items">
+            <li><a class="modal-nav__item" href="#">Collections</a></li>
+            <li><a class="modal-nav__item" href="#">Men</a></li>
+            <li><a class="modal-nav__item" href="#">Women</a></li>
+            <li><a class="modal-nav__item" href="#">About</a></li>
+            <li><a class="modal-nav__item" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- modal -->
+
+      <div class="header__cart-avatar">
+        <div class="header__cart">
+          <div class="header__cart--noti">
+            0
+          </div>
+          <img src="./images/icon-cart.svg" alt="carrito">
+        </div>
+        <img class="header__cart--avatar" src="./images/image-avatar.png" alt="avatar">
+      </div>
+
+    </header>
+
+    <section class="content">
+      <article class="gallery">
+        <div class="gallery__image-container">
+          <img class="gallery__prev" src="./images/icon-previous.svg" alt="prev">
+          <img class="gallery__next" src="./images/icon-next.svg" alt="next">
+        </div>
+        <div class="gallery__thumbnails">
+          <img id="1" class="gallery__thumbnails-1" src="./images/image-product-1-thumbnail.jpg" alt="thumb1">
+          <img id="2" class="gallery__thumbnails-1" src="./images/image-product-2-thumbnail.jpg" alt="thumb1">
+          <img id="3" class="gallery__thumbnails-1" src="./images/image-product-3-thumbnail.jpg" alt="thumb1">
+          <img id="4" class="gallery__thumbnails-1" src="./images/image-product-4-thumbnail.jpg" alt="thumb1">
+        </div>
+      </article>
+
+      <article class="details">
+        <h2 class="details__titulo"> Sneaker Company </h2>
+        <h2 class="details__tituloDet"> Fall Limited Edition Sneakers</h2>
+        <p class="details__description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="details__prices">
+          <p class="details__now">$125.00 <span class="details__discount">50%</span></p>
+          <p class="details__before">$250.00</p>
+        </div>
+        <div class="details__buttons">
+          <div class="input">
+            <img class="input__minus" src="./images/icon-minus.svg" alt="minus">
+            <input type="text" value="0" class="input__number">
+            <img class="input__plus" src="./images/icon-plus.svg" alt="plus">
+          </div>
+          <button class="details__button"> <img src="./images/icon-cart copy.svg" alt="carrito"> Add to cart</button>
+        </div>
+      </article>
+
+    </section>
+    <!-- Cart modal -->
+    <div class="cart__modal">
+      <p class="cart__modal-tittle">Cart</p>
+      <div class="cart__modal-checkout-container">
+        <div class="cart__modal-details-container">
+          <img  class="cart__modal-img" src="./images/image-product-1-thumbnail.jpg" alt="thumb">
+          <div>
+            <p class="cart__modal-product">Autumn limited edition...</p>
+            <p class="cart__modal-price">$125.00 x 0 <span>$0.00</span></p>
+          </div>
+          <img class="cart__modal-trash" src="./images/icon-delete.svg" alt="delete">
+        </div>
+        <button class="cart__modal-delete">Checkout</button>
+      </div>
+    </div> 
+    <!-- Cart modal -->
+    
+    
+  </main>
+  <!-- gallery modal -->
+  <div class="modal-gallery__Background">
+    <article class="modal-gallery">
+      <div class="modal-gallery__closeCont">
+        <img src="./images/icon-close.svg" alt="close" class="modal-gallery__close">
+      </div>
+      <div class="modal-gallery__container">
+        <img class="modal-gallery__prev" src="./images/icon-previous.svg" alt="prev">
+        <img class="modal-gallery__next" src="./images/icon-next.svg" alt="next">
+      </div>
+      <div class="modal-gallery__thumbnails">
+        <img id="1" class="modal-gallery__thumbnails-1" src="./images/image-product-1-thumbnail.jpg" alt="thumb1">
+        <img id="2" class="modal-gallery__thumbnails-1" src="./images/image-product-2-thumbnail.jpg" alt="thumb1">
+        <img id="3" class="modal-gallery__thumbnails-1" src="./images/image-product-3-thumbnail.jpg" alt="thumb1">
+        <img id="4" class="modal-gallery__thumbnails-1" src="./images/image-product-4-thumbnail.jpg" alt="thumb1">
+      </div>
+    </article>
+  </div>
+  <!-- gallery modal -->
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/sergio-yepes-2b7158214/" target="_blank">Sergio Yepes</a>.
+  </footer>
+  <script src="./main.js"></script>
+</body>
+</html>
