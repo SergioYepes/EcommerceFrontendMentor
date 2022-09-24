@@ -172,7 +172,7 @@ function changeNextImg(imgContainer){
     else{
         imgIndex++;
     }
-    imgContainer.style.backgroundImage=`url("../../ecommerce-product-page-main/images/image-product-${imgIndex}.jpg")`
+    imgContainer.style.backgroundImage=`url("./images/image-product-${imgIndex}.jpg")`
 }
 function changePrevImg(imgContainer){
     if(imgIndex==1){
@@ -181,6 +181,6 @@ function changePrevImg(imgContainer){
     else{
         imgIndex--;
     }
-    imgContainer.style.backgroundImage=`url("../../ecommerce-product-page-main/images/image-product-${imgIndex}.jpg")`
+    imgContainer.style.backgroundImage=`url("./images/image-product-${imgIndex}.jpg")`
 }
 
