@@ -103,7 +103,7 @@ galleryTh=[...galleryTh]
 galleryTh.forEach(galleryTh=>{
     galleryTh.addEventListener("click",event=>{
         let galleryThIndex= event.target.id
-        imgContGall.style.backgroundImage=`url(".images/image-product-${galleryThIndex}.jpg")` 
+        imgContGall.style.backgroundImage=`url("./images/image-product-${galleryThIndex}.jpg")` 
     })
 })
 let modalIndex=1;
@@ -125,7 +125,7 @@ Th=[...Th]
 Th.forEach(Th=>{
     Th.addEventListener("click",event=>{
         let ThIndex= event.target.id
-        imgCont.style.backgroundImage=`url(".images/image-product-${ThIndex}.jpg")` 
+        imgCont.style.backgroundImage=`url("./images/image-product-${ThIndex}.jpg")` 
     })
 })
 
